@@ -38,12 +38,61 @@ body {
 .section {
     flex:auto;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-img {
-    max-height: 65%;
+.section.hero {
+    background-color: #1F2937;
+    gap:12px;
+    min-height:400px;
+    
+}
+
+.section.hero .main {
+    color:#F9FAF8;
+    font-size:48px;
+    font-weight: 900;
+}
+
+.hero-text {
+    flex: 0 0 40%;
+    padding:12px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.section.hero .subtext {
+    color:white;
+    font-size: 18px;
+    
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    overflow: hidden;
+    
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    flex:0 0 0;
+}
+
+.button.hero {
+    background-color: #3882F6;
+    color:white;
+    font-weight: 700;
+    border:0;
+    padding:8px 20px;
+    border-radius: 8px;
+    max-width: 100px;
 }
 
 ul {
